@@ -1,0 +1,20 @@
+package com.company;
+
+public class ListOfSalesPerson {
+    private String SalesmanFirstname;
+    private String SalesmanLastname;
+    private int contact;
+
+    public static void updatecontact(){}
+
+    public String getSalesmanFirstname(){return SalesmanFirstname; }
+    public void setSalesmanFirstname(String _SalesmanFirstname){this.SalesmanFirstname = _SalesmanFirstname;}
+
+    public String getSalesmanLastname(){return SalesmanLastname; }
+    public void setSalesmanLastname(String _SalesmanLastname){this.SalesmanLastname = _SalesmanLastname;}
+
+    public int getContact(){return contact; }
+    public void setContact(int _Contact){this.contact = _Contact;}
+
+
+}
