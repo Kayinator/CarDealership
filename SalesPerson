@@ -11,16 +11,29 @@ Revision Made: modifying methods
 package com.company;
 
 public class SalesPerson {
-    private String SalesmanName;
+    private String firstName;
+    private String lastName;
+
     private int contact;
 
     public static void addSalesPerson(){}
     public static void addSalesLead(){}
     public static void addVehicle(){}
 
-    public String getSalesmanName(){return SalesmanName; }
-    public void setSalesmanName(String _SalesmanName){this.SalesmanName = _SalesmanName;}
+    public SalesPerson(String _firstName, String _lastName, int _contact){
+        this.firstName = _firstName;
+        this.lastName = _lastName;
+        this.contact = _contact;
+    }
 
+    public String toString() {
+
+        return "SalesPerson firstName=" + firstName + ", lastName=" + lastName + ", contact " + contact;
+    }
+    public String getFirstName(){return firstName; }
+    public void setFirstName(String _firstname){this.firstName = _firstname;}
+    public String getLastName(){return lastName; }
+    public void setLastName(String _lastname){this.lastName = _lastname;}
     public int getContact(){return contact; }
     public void setContact(int _Contact){this.contact = _Contact;}
 
